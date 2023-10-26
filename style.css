@@ -1,0 +1,257 @@
+/*
+Theme Name: Tokyo in April
+Author: Guohui Wan
+Description: Tokyo in April responsive HTML5 theme
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+      background-color: #fefbfb;
+      font-family: Helvetica;
+      background-image: url('imgs/sushi1.jpg'); 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Set a base font size for the body */
+
+  }
+  .content-area, .article {
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+article {
+  color: white;
+}
+p{
+  font-size: 1.3 rem;
+}
+
+
+/* Media query for adjusting font size at specific screen widths */
+@media screen and (max-width: 768px) {
+  p {
+      font-size: 1.2rem; /* Adjust the font size for screens up to 768px wide */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+      font-size: 1rem; /* Adjust the font size for screens up to 480px wide */
+  }
+}
+
+header h1 a{
+  color: white;
+  margin-left: 2vw;
+}
+.header-menu a{
+  color:white;
+  margin-right: 3vw;
+}
+#online-order a{
+  margin-left: 9vw;
+  margin-top: 5vh;
+}
+#three, #five {
+  text-align: left; /* Align the text to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the content to the left vertically (center vertically) */
+  justify-content: center; /* Center horizontally */
+  height: 100%; /* This ensures the content takes the full height of the parent section */
+  padding: 0 20px; /* Add some padding to control the left spacing */
+}
+  .my-logo,
+footer {
+  width: 100%;
+  padding-left: 1%;
+}
+body > header > h1 > a {
+  color: #ffffff;
+  font-weight: 400;
+}
+article > header {
+}
+footer {
+  margin-top: 4px;
+  background-color: black;
+  overflow-y: auto;
+}
+footer p{
+  color: white;
+}
+footer h3{
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+/* 'Margin: 0 auto' centers block content on the page */
+.wrap {
+  width: 99%;
+  margin: 0 auto;
+}
+
+.content-thin {
+    width: 100%;
+}
+.content-full-width {
+    width: 100%;
+}
+
+.primary-sidebar {
+  width: 25%;
+  padding: 1%;
+  vertical-align: top;
+  background-color: #ececec;
+}
+
+.my-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.my-menu-class li {
+    display: inline;
+    margin-right: 10px;
+}
+.section-one{
+    height: 90vh;
+    flex-wrap: wrap;
+}
+.section-one h2{
+    color: white;
+   font-size:100px;
+  margin-top: 15vh;
+  margin-left: 2vw;
+}
+.section-one p{
+  color: white;
+  margin-left: 3vw;
+}
+.section-two{
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top (vertically) */
+}
+
+.section-three{
+    height: 85vh;
+    background-image: url('imgs/sushi5.jpg');
+    background-size: cover; 
+}
+
+.section-three h2{
+    color: white;
+    margin-left: 5vw;
+}
+.section-three p{
+    color: white;
+    margin-left: 5vw;
+    font-size: large;
+
+}
+.section-four{
+    height: 50vh;
+    background-color: white;
+    overflow-y: auto;
+
+}
+
+.section-four h2{
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+
+}
+.section-five{
+    height: 50vh;
+}
+.section-five h2{
+    color: white;
+    margin-left: 5vw;
+}
+.section-five p{
+    color: white;
+    margin-left: 5vw;
+
+}
+  
+  .section--one p{
+    color: white;
+  }
+ 
+  .wp-block-button a{
+    margin-left: 3vw;
+    margin-top: 3vh;
+  }
+  @media (max-width: 768px) {
+    .section-two {
+        flex-direction: column; /* Stack left and right content vertically on smaller screens */
+    }
+}
+  #section-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-y: auto;
+}
+
+  .left-content {
+    flex: 1;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    text-align: left; /* Align the text to the left */
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the left content */
+    padding: 10px;
+  }
+  .left-content h2{
+max-width: 100%;
+  }
+  
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Display the image and paragraph vertically */
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 10px;
+
+  }
+
+  /* Style for the paragraph in Section Two */
+  .right-content p {
+    margin-top: 0; /* Remove any default top margin to align with the image */
+  }
+  
+  /* Style for the image in Section Two */
+  .right-content img {
+    max-width: 90%; /* Ensure the image doesn't overflow its container */
+  }
+  .image-slider img {
+    max-width: 90%; /* Set maximum width to ensure responsive scaling */
+}
